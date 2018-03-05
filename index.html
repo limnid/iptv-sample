@@ -1,0 +1,57 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Mover.uz</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.ico">
+    <!-- htmlbuild:css -->
+    <link rel="stylesheet" type="text/css" href="css/release.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div id="root" class="Main">
+    <div id="background" class="background-default"></div>
+    <div id="error" style="display: none;">
+        <div><i class="fa fa-cloud-download" aria-hidden="true"></i></div>
+        <div>
+            Во время загрузки произошла ошибка <br/>
+        </div>
+    </div>
+    <div id="Main-Page"></div>
+    <div id="Watch-Page" style="display: none;"></div>
+    <div id="preloader" class="preloader__container">
+        <div class="preloader__background"></div>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <div id="Info-Page" style="display: none;"></div>
+</div>
+
+<!-- htmlbuild:remove -->
+<!--<script src="http://81.95.237.122:9000/target/target-script-min.js#anonymous"></script>-->
+<script src="js/libs/hmac-sha256.js"></script>
+<script src="js/libs/enc-base64.js"></script>
+<script src="js/libs/jq.js"></script>
+<script src="js/core.js"></script>
+<script src="js/config.js"></script>
+<script src="js/store.js"></script>
+<script src="js/components/navigation.js"></script>
+<script src="js/components/toolbar.js"></script>
+<script src="js/components/grid.js"></script>
+<script src="js/components/watch.js"></script>
+<script src="js/providers/main.js"></script>
+<script src="js/providers/info.js"></script>
+<script src="js/providers/watch.js"></script>
+<script src="js/main.js"></script>
+<script src="js/stb.js"></script>
+<!-- endbuild -->
+<!-- htmlbuild:js -->
+<script type="text/javascript" src="event.js"></script>
+<script type="text/javascript" src="js/release.js"></script>
+<!-- endbuild -->
+</body>
+</html>
